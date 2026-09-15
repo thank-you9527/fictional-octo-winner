@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fictional-octo-winner"
+version = "0.1.0"
+description = "Fail-closed BitoPro paper-trading skeleton"
+requires-python = ">=3.11"
+dependencies = ["httpx>=0.27,<1", "websockets>=13,<16", "PyYAML>=6,<7"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9", "pytest-asyncio>=0.24,<1"]
+
+[project.scripts]
+octowinner = "octowinner.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+asyncio_mode = "auto"
+

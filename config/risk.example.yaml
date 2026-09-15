@@ -1,0 +1,18 @@
+mode: PAPER
+quote_currency: TWD
+total_capital: "10000"
+max_order_notional: "1000"
+max_daily_trades: 5
+min_cash: "3000"
+max_position_notional: "2500"
+daily_loss_limit: "500"
+total_drawdown_limit: "1000"
+pair_whitelist: ["BTC_TWD", "ETH_TWD", "USDT_TWD"]
+market_data_stale_seconds: 30
+price_change_trigger_pct: "1.0"
+volume_change_trigger_pct: "50"
+spread_trigger_pct: "1.0"
+pnl_trigger_pct: "3.0"
+kill_switch: false
+live_acknowledgement: ""
+
